@@ -1,0 +1,580 @@
+{
+  "name": "prova_gui",
+  "id": "prova_gui",
+  "description": "",
+  "created_on": "04/09/2022, 08:09:36",
+  "last_modify": "19/09/2022, 08:12:42",
+  "graphs": {
+    "main2": {
+      "nodes": [
+        {
+          "id": "1ead701c-f35d-4355-b989-26c77fb14a0c",
+          "position": {
+            "x": 683,
+            "y": 85
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "type": "Object",
+                "value": "{\"msg\":\"ciao\",\"other\":\"dsfsdf\",\"nested\":{\"t\":200.5,\"bccc\":\"40\",\"lista\":[1,2,3,{\"sas\":2}]}}"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 683,
+            "y": 85
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "0e76eb5e-99f7-4d67-9be2-c23bff9de455",
+          "position": {
+            "x": 1285,
+            "y": 348
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "type": "String",
+                "value": "Hello world!",
+                "debug": true
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1285,
+            "y": 348
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "1dd27c55-248a-4b5f-8f4c-987b275f6b5f",
+          "position": {
+            "x": 617,
+            "y": 420
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Trigger",
+            "events": null,
+            "description": "### Description\nThe TRIGGER component is used to start streams.\n\n### Output\nThe parameter Type can be set as a **String** or an **Object**. The parameter Value, on the other hand, defines the actual output of the component.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "type",
+                  "type": "select",
+                  "description": "The type of data",
+                  "label": "Type",
+                  "validation": {
+                    "required": "Required field"
+                  },
+                  "fragment": null,
+                  "advanced": false,
+                  "options": [
+                    "String",
+                    "Object"
+                  ],
+                  "value": null
+                },
+                {
+                  "name": "value",
+                  "type": "dynamic",
+                  "dynamicType": {
+                    "String": "area",
+                    "Object": "code"
+                  },
+                  "parent": "type",
+                  "label": "Value",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiPlayFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "type": "Object",
+                "value": "{\"msg\":\"ciao\",\"age\":47}"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
+        },
+        {
+          "id": "6a90921e-b75b-470b-a010-f3252c980c16",
+          "position": {
+            "x": 1059,
+            "y": 5
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Array",
+            "events": null,
+            "description": "### Description\nThe ARRAY component is used as an iterator. The array to iterate over can be defined with the parameter value or depend on the input received.\n\n### Input\nIn case an input is given, it will correspond to the data to iterate on.\n\n### Output\nThe number of outputs depends on the length of what is passed in input or defined in the parameter value. The output will consist of iterating element by element.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Common",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "value",
+                  "type": "text",
+                  "description": "Python or json code that evaluates to a list or iterable",
+                  "label": "value",
+                  "validation": null,
+                  "fragment": null,
+                  "advanced": false,
+                  "options": null,
+                  "value": null
+                },
+                {
+                  "name": "propagate",
+                  "type": "boolean",
+                  "label": "Flush at the end"
+                },
+                {
+                  "name": "flatten",
+                  "type": "boolean",
+                  "label": "Flatten the array recursively"
+                }
+              ],
+              "click": "Send message",
+              "icon": "RiBracketsFill",
+              "values": {
+                "value": "[1,2,3,4,5]",
+                "propagate": true,
+                "flatten": false
+              }
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1059,
+            "y": 5
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "b5f545ab-07a0-4d57-94ae-175420d1c991",
+          "position": {
+            "x": 1518,
+            "y": 99
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Delay",
+            "events": null,
+            "description": "### Description\nThe DELAY component is used to set a communication wait time between the previous and next components.\n\n### Input\nIn this case there is no fixed input format.\n\n### Output\nIn this case there is no fixed output format.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Time",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "time",
+                  "type": "number",
+                  "label": "Time",
+                  "helper": "Expressed in milliseconds",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                }
+              ],
+              "click": null,
+              "icon": "RiTimerFill",
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "time": "1000"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 1518,
+            "y": 99
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "e38cab2c-1900-4934-a17e-f342a1899a46",
+          "position": {
+            "x": 988,
+            "y": 392
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Route",
+            "events": null,
+            "description": "### Description\nThe ROUTE component is used to create a web server listening on a specific address and a specific HTTP method.\n\n### Input\nThe component has no input.\n\n### Output\nIn this case there is no fixed output format.",
+            "inputs": [],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": false,
+            "options": {
+              "group": "HTTP",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "path",
+                  "type": "path",
+                  "helper": "Insert a path without '/' at start"
+                }
+              ],
+              "click": null,
+              "icon": "RiCloudyFill",
+              "values": {}
+            }
+          },
+          "selectable": true,
+          "draggable": true,
+          "__class__": "Node"
+        },
+        {
+          "id": "e93e4e65-3662-4064-96e9-cac8485e1331",
+          "position": {
+            "x": 577,
+            "y": 45
+          },
+          "type": "comment",
+          "dragHandle": "#commentHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 296,
+          "height": 503,
+          "selected": null,
+          "dragging": null,
+          "data": {
+            "comment": "dddd",
+            "fill": "#F74B65",
+            "height": 503,
+            "width": 296
+          },
+          "zIndex": -1,
+          "selectable": false,
+          "connectable": false,
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-6a90921e-b75b-470b-a010-f3252c980c16output-b5f545ab-07a0-4d57-94ae-175420d1c991input",
+          "source": "6a90921e-b75b-470b-a010-f3252c980c16",
+          "sourceHandle": "output",
+          "target": "b5f545ab-07a0-4d57-94ae-175420d1c991",
+          "targetHandle": "input",
+          "data": {
+            "startColor": "#D770AD",
+            "stopColor": "#FA804C"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    }
+  },
+  "open": [
+    "main"
+  ],
+  "active": "main",
+  "version": "1.0.0",
+  "__class__": "Project"
+}
